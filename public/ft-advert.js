@@ -9,7 +9,7 @@ class FTAdvert extends HTMLElement {
                     color: green;
                 }
             </style>
-            <p>FTAdvert!</p>
+            <p>FTAdvert v2!</p>
     `;
   }
 }
