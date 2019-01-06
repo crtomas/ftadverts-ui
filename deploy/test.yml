@@ -1,7 +1,7 @@
 version: "3"
 services:
   web:
-    image: 192.168.99.100:55000/ftadverts/ui:ci-${API_BUILD_NUMBER-1}
+    image: 192.168.99.100:55000/ftadverts/ui:ci-${UI_BUILD_NUMBER-1}
     deploy:
       replicas: 1
       restart_policy:
