@@ -1,4 +1,4 @@
-class FTAdvert extends HTMLElement {
+class FTAdvertDashboard extends HTMLElement {
  constructor() {
     super();
 
@@ -13,4 +13,4 @@ class FTAdvert extends HTMLElement {
     `;
   }
 }
-window.customElements.define("ft-advert", FTAdvert);
+window.customElements.define("ftadvert-dashboard", FTAdvertDashboard);
