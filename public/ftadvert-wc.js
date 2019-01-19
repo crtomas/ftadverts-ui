@@ -9,7 +9,7 @@ class FTAdvertDashboard extends HTMLElement {
                     color: green;
                 }
             </style>
-            <p>FTAdvert v2!</p>
+            <p>FTAdvert v15!</p>
     `;
   }
 }

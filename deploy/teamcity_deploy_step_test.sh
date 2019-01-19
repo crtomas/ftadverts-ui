@@ -6,4 +6,4 @@
 #./teamcity_deploy_step_test
 #*****************************************
 
-docker stack deploy -c test.yml ftadverts_ui_test
+docker stack deploy -c test.yml ftspa_ui_test
