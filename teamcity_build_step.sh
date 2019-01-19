@@ -15,6 +15,9 @@ build_number=$1
 image=$registry_ip:$registry_port/$microservice:ci-$build_number
 latest=$registry_ip:$registry_port/$microservice:latest
 
+echo $image
+echo $latest
+
 docker build -t $image -t $lastest .
 docker push $image
-docker push -f $latest
+docker push $latest
