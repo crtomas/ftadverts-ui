@@ -18,6 +18,6 @@ latest=$registry_ip:$registry_port/$microservice:latest
 echo $image
 echo $latest
 
-docker build -t $image -t $lastest .
+docker build -t $image -t $latest .
 docker push $image
 docker push $latest
