@@ -8,7 +8,7 @@
 
 #$1 Teamcity %build.number%
 
-microservice="ftadvert/ui"
+microservice="ftadverts/ui"
 registry_ip=192.168.99.100
 registry_port=55000
 build_number=$1
