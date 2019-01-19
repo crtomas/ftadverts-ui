@@ -1,7 +1,7 @@
 class FTAdvertDashboard extends HTMLElement {
  constructor() {
     super();
-	this._dataUrl = "https://ftadvert_api/";
+	this._dataUrl = "http://192.168.99.100:3100";
 	this._api;
 	
 	this.fetchData().then((json) => {
