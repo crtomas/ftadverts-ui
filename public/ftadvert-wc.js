@@ -2,6 +2,7 @@ class FTAdvertDashboard extends HTMLElement {
  constructor() {
     super();
 	this._dataUrl = "http://192.168.99.100:3100";
+	//this._dataUrl = "https://reqres.in/api/users/2";
 	this._api;
 	
 	this.fetchData().then((json) => {
@@ -11,7 +12,7 @@ class FTAdvertDashboard extends HTMLElement {
 		}
 	});
 
-    const shadowRoot = this.attachShadow({mode: 'closed'});
+    const shadowRoot = this.attachShadow({mode: 'open'});
     shadowRoot.innerHTML = `
             <style>
                 p {
@@ -32,8 +33,9 @@ class FTAdvertDashboard extends HTMLElement {
   		});        
   }
   render(){
-	const $p = document.getElementById("api_version");
-	$p.innerHTML = this._api.api;
+	const $p = this.shadowRoot.querySelector("#api_version");
+	//$p.innerHTML = this._api.data.id;
+	$p.innerHTML = this._api.api;	
 
   }
 }
