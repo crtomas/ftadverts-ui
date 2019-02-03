@@ -33,7 +33,7 @@ class FTAdvertDashboard extends HTMLElement {
   }
   render(){
 	const $p = this.shadowRoot.querySelector("#api_version");
-	$p.innerHTML = this._api.api[0] + this._api.api[1];	
+	$p.innerHTML = this._api[0] + this._api[1];	
 
   }
 }
