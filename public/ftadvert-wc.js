@@ -1,8 +1,7 @@
 class FTAdvertDashboard extends HTMLElement {
  constructor() {
     super();
-	this._dataUrl = "http://192.168.99.100:3100";
-	//this._dataUrl = "https://reqres.in/api/users/2";
+	this._dataUrl = "http://192.168.99.100:3102";
 	this._api;
 	
 	this.fetchData().then((json) => {
@@ -34,8 +33,7 @@ class FTAdvertDashboard extends HTMLElement {
   }
   render(){
 	const $p = this.shadowRoot.querySelector("#api_version");
-	//$p.innerHTML = this._api.data.id;
-	$p.innerHTML = this._api.api;	
+	$p.innerHTML = this._api.api[0] + this._api.api[1];	
 
   }
 }
